@@ -38,6 +38,105 @@
         "type": "minecraft:dynamic/run_command",
         "template": "pardon $(playername)"
       }
+    },
+    {
+      "label": "Launch",
+      "tooltip": "Launch the player into the sky",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(playername) minecraft:levitation 1 255 true"
+      }
+    },
+    {
+      "label": "Teleport here",
+      "tooltip": "Teleport the player to you",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "tp $(playername) @s"
+      }
+    },
+    {
+      "label": "Teleport to",
+      "tooltip": "Teleport you to the player",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "tp @s $(playername)"
+      }
+    },
+    {
+      "label": "Kill",
+      "tooltip": "Kill the player",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "kill $(playername)"
+      }
+    },
+    {
+      "label": "Damage",
+      "tooltip": "Damage the player",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "damage $(playername) 4"
+      }
+    },
+    {
+      "label": "Survival",
+      "tooltip": "Set the player to survival mode",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "gamemode survival $(playername)"
+      }
+    },
+    {
+      "label": "Creative",
+      "tooltip": "Set the player to creative mode",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "gamemode creative $(playername)"
+      }
+    },
+    {
+      "label": "Adventure",
+      "tooltip": "Set the player to adventure mode",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "gamemode adventure $(playername)"
+      }
+    },
+    {
+      "label": "Spectator",
+      "tooltip": "Set the player to spectator mode",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "gamemode spectator $(playername)"
+      }
+    },
+    {
+      "label": "Heal",
+      "tooltip": "Heal the player",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(playername) minecraft:instant_health 1 255 true"
+      }
+    },
+    {
+      "label": "Smite",
+      "tooltip": "Smite the player",
+      "width": 50,
+      "action":{
+        "type": "minecraft:dynamic/run_command",
+        "template": "execute at $(playername) run summon minecraft:lightning_bolt"
+      }
     }
   ]
 }

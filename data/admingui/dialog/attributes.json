@@ -5,17 +5,18 @@
     {
       "type": "minecraft:text",
       "key": "playername",
-      "width": 125,
+      "width": 200,
       "label": "Player",
       "initial": "@s"
     },
     {
       "type": "minecraft:number_range",
       "key": "value",
+      "width": 500,
       "label": "Value",
       "start": 0,
-      "end": 15,
-      "step": 0.05,
+      "end": 40,
+      "step": 0.01,
       "initial": 1
     }
   ],
@@ -70,6 +71,38 @@
       "action": {
         "type": "minecraft:dynamic/run_command",
         "template": "attribute $(playername) minecraft:block_interaction_range base set $(value)"
+      }
+    },
+    {
+      "label": "Set entity reach",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:entity_interaction_range base set $(value)"
+      }
+    },
+    {
+      "label": "Set knockback resistance",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:knockback_resistance base set $(value)"
+      }
+    },
+    {
+      "label": "Set max health",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:max_health base set $(value)"
+      }
+    },
+    {
+      "label": "Set attack damage",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:attack_damage base set $(value)"
       }
     }
   ]
