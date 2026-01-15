@@ -2,6 +2,11 @@ name: CI
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        required: true
+
 
 jobs:
   build:
@@ -17,7 +22,7 @@ jobs:
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: QjLHfiSI
-          version: 0.0.2
+          version: ${{ inputs.version }}
           loaders: fabric
           game-versions: |-
             1.21.6
