@@ -29,6 +29,15 @@
         "type": "minecraft:dynamic/run_command",
         "template": "ban $(playername)"
       }
+    },
+    {
+      "label": "Unban",
+      "tooltip": "Unban the player",
+      "width": 50,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "pardon $(playername)"
+      }
     }
   ]
 }
