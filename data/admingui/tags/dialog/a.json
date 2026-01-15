@@ -1,7 +1,7 @@
 {
   "values": [
-    "draft:attributes",
-    "draft:player_manager",
+    "admingui:attributes",
+    "admingui:player_manager",
     {
       "id": "#minecraft:quick_actions"
     },
