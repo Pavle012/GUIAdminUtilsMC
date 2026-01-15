@@ -6,6 +6,12 @@ on:
       version:
         description: 'Version'
         required: true
+      channel:
+        description: 'Channel (release, beta, alpha)'
+        required: true
+      changelog:
+        description: 'Changelog'
+        required: false
 
 
 jobs:
@@ -32,3 +38,6 @@ jobs:
             1.21.10
             1.21.11
           files: target/GUIAdminUtils.zip
+          channel: ${{ inputs.channel }}
+          changelog: ${{ inputs.changelog }}
+          
