@@ -9,6 +9,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Zip Datapack
+        run: |
+          mkdir -p target
+          zip -r target/GUIAdminUtils.zip pack.mcmeta data
       - uses: cloudnode-pro/modrinth-publish@v2
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "GUI Admin utils",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "playername",
+      "label": "Player username to manage"
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "columns": 4,
+  "actions": [
+    {
+      "label": "Kick",
+      "tooltip": "Kick the player",
+      "width": 50,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "kick $(playername)"
+      }
+    },
+    {
+      "label": "Ban",
+      "tooltip": "Ban the player",
+      "width": 50,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "ban $(playername)"
+      }
+    }
+  ]
+}

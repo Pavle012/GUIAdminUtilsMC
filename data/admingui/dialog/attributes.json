@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Attributes",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "playername",
+      "width": 125,
+      "label": "Player",
+      "initial": "@s"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "value",
+      "label": "Value",
+      "start": 0,
+      "end": 15,
+      "step": 0.05,
+      "initial": 1
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "columns": 3,
+  "actions": [
+    {
+      "label": "Set scale",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:scale base set $(value)"
+      }
+    },
+    {
+      "label": "Set speed",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:movement_speed base set $(value)"
+      }
+    },
+    {
+      "label": "Set jump strength",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:jump_strength base set $(value)"
+      }
+    },
+    {
+      "label": "Set step height",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:step_height base set $(value)"
+      }
+    },
+    {
+      "label": "Set gravity",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:gravity base set $(value)"
+      }
+    },
+    {
+      "label": "Set block reach",
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "attribute $(playername) minecraft:block_interaction_range base set $(value)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    "draft:attributes",
+    "draft:player_manager",
+    {
+      "id": "#minecraft:quick_actions"
+    },
+    {
+      "id": "#minecraft:pause_screen_additions"
+    }
+  ]
+}
