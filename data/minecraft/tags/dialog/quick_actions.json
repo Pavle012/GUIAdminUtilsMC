@@ -1,4 +1,7 @@
 {
     "replace": false,
-    "values": []
+    "values": [
+        "admingui:attributes",
+        "admingui:player_manager"
+    ]
 }
