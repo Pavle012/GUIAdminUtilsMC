@@ -2,6 +2,7 @@
   "values": [
     "admingui:attributes",
     "admingui:player_manager",
+    "admingui:particles",
     {
       "id": "#minecraft:quick_actions"
     },

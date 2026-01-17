@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "admingui:attributes",
-        "admingui:player_manager"
+        "admingui:player_manager",
+        "admingui:particles"
     ]
 }
