@@ -29,7 +29,9 @@ jobs:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: QjLHfiSI
           version: ${{ inputs.version }}
-          loaders: datapack
+          loaders: |-
+            datapack
+            fabric
           game-versions: |-
             1.21.6
             1.21.7

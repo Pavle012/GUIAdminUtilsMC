@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Potion effects",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Set the effect strength to 1 smaller than you want because of the command syntax. (instead of 1 set 0, instead of 2 set 1, etc)",
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "The max you can set is 255"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:boolean",
+      "key": "particles",
+      "label": "Visible particles",
+      "initial": false,
+      "on_true": "false",
+      "on_false": "true"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "length",
+      "label": "Effect time"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "strength",
+      "width": 100,
+      "label": "Effect strength",
+      "initial": "0",
+      "max_length": 3
+    },
+    {
+      "type": "minecraft:text",
+      "key": "username",
+      "label": "Player name",
+      "initial": "@s"
+    }
+  ],
+  "actions": [
+    {
+      "label": "Set speed",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) $(effect) $(length) $(strength) $(particles)"
+      }
+    }
+  ]
+}
