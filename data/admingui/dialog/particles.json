@@ -46,7 +46,98 @@
       "label": "Set speed",
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "effect give $(username) $(effect) $(length) $(strength) $(particles)"
+        "template": "effect give $(username) speed $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set jump boost",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) jump_boost $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set slowness",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) slowness $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set haste",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) haste $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set weakness",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) weakness $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set strength",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) strength $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set fire resistance",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) fire_resistance $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set water breathing",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) water_breathing $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set invisibility",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) invisibility $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set blindness",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) blindness $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set nausea",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) nausea $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set regeneration",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) regeneration $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set poison",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) poison $(length) $(strength) $(particles)"
+      }
+    },
+    {
+      "label": "Set wither",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "effect give $(username) wither $(length) $(strength) $(particles)"
       }
     }
   ]
